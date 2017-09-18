@@ -22,8 +22,11 @@ print  (String(num1) + " + " + String(num2) + " = "  + String(answer))
 // concatenate a string inside the print statement so that it prints the string "1.0 + 1.0 = 2.0"
 // bonus: create new variables that hold Ints and cast the values of num1 and num2 to integers. Then interpolate the new variables so that the string reads "1 + 1 = 2"
 
+var num6: Int = 3
+var num8: Int = 6
+var ans = (num6 + num8)
 
-
+    print ( "\(num6) + \(num8) = \(ans)")
 
 
 //-------------------------------------------------------------------------------------------------
@@ -33,10 +36,11 @@ num1 = 55 //notice that once we've declared the variable using 'var' we don't ha
 
 num2 = 40
 
+answer = num1 - num2
 answer // caculate the new subtraction problem and store the answer in this variable
 
 // concatenate so that it prints the string "55 - 40 = 15"
-print("")
+print (String(num1) + " - " + String(num2) + " = " + String(answer))
 
 
 //-------------------------------------------------------------------------------------------------
@@ -46,34 +50,34 @@ num1 = 4
 
 num2 = 3
 
-answer
+answer = num1 * num2
 
 // concatenate so that it prints the string "4 * 3 = 12"
-print("")
+print(String(num1) + " * " + String(num2) + " = " + String(answer))
 
 
 //-------------------------------------------------------------------------------------------------
 // 3
 // division
-num1
+num1 = 20
 
-num2
+num2 = 4
 
-answer
+answer = num1 / num2
 
 // concatenate so that it prints the string "20 / 4 = 5"
-print("")
+print(String(num1) + " / " + String(num2) + " = " + String(answer))
 
 
 //-------------------------------------------------------------------------------------------------
 // 4
 // modulus
 // use the modulus (%) operator to find the remainder when you divide 453 / 7
-num1
+num1 = 453
 
-num2
+num2 = 7
 
-answer
+answer =
 
 // concatenate so that it prints the string, complete with the answer "453 % 7 = ___"
 print("")

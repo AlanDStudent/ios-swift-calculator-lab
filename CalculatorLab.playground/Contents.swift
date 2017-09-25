@@ -22,8 +22,8 @@ print  (String(num1) + " + " + String(num2) + " = "  + String(answer))
 // concatenate a string inside the print statement so that it prints the string "1.0 + 1.0 = 2.0"
 // bonus: create new variables that hold Ints and cast the values of num1 and num2 to integers. Then interpolate the new variables so that the string reads "1 + 1 = 2"
 
-var num6: Int = 3
-var num8: Int = 6
+var num6: Int = 1
+var num8: Int = 1
 var ans = (num6 + num8)
 
     print ( "\(num6) + \(num8) = \(ans)")
@@ -40,7 +40,7 @@ answer = num1 - num2
 answer // caculate the new subtraction problem and store the answer in this variable
 
 // concatenate so that it prints the string "55 - 40 = 15"
-print (String(num1) + " - " + String(num2) + " = " + String(answer))
+print (String(Int(num1)) + " - " + String(Int(num2)) + " = " + String(Int(answer)))
 
 
 //-------------------------------------------------------------------------------------------------
@@ -53,7 +53,7 @@ num2 = 3
 answer = num1 * num2
 
 // concatenate so that it prints the string "4 * 3 = 12"
-print(String(num1) + " * " + String(num2) + " = " + String(answer))
+print(String(Int(num1)) + " * " + String(Int(num2)) + " = " + String(Int(answer)))
 
 
 //-------------------------------------------------------------------------------------------------
@@ -66,7 +66,7 @@ num2 = 4
 answer = num1 / num2
 
 // concatenate so that it prints the string "20 / 4 = 5"
-print(String(num1) + " / " + String(num2) + " = " + String(answer))
+print(String(Int(num1)) + " / " + String(Int(num2)) + " = " + String(Int(answer)))
 
 
 //-------------------------------------------------------------------------------------------------
@@ -77,10 +77,10 @@ num1 = 453
 
 num2 = 7
 
-answer =
+answer = Double(Int(num1) % Int(num2))
 
 // concatenate so that it prints the string, complete with the answer "453 % 7 = ___"
-print("")
+print(String(Int(num1)) + " % " + String(Int(num2)) + " = " + String(answer))
 
 
 //-------------------------------------------------------------------------------------------------
@@ -88,31 +88,31 @@ print("")
 // exponents
 // use a method in the Darwin library to find the answer to 54^3
 // Look up "Calculate power of a number in swift" and see what you can find!
-num1
+num1 = 54
 
-num2
+num2 = 3
 
-answer
+answer = pow(num1,num2)
 
 // concatenate so that it prints the string "54^3 = ___"
-print("")
+print(String(Int(num1)) + " + " + String(Int(num2)) + " = " + String(Int(answer)))
 
 
 //-------------------------------------------------------------------------------------------------
 // 6
 // combining multiple operators
-num1
+num1 = 60
 
-num2
+num2 = 5
 
-var num3: Double
+var num3: Double = 8
 
-var num4: Double
+var num4: Double = 3
 
-answer
+answer = Double(Int(num1) / Int(num2) + Int(num3) % Int(num4))
 
 // concatenate so that it prints the string "(60 / 5) + (8 % 3)"
-print("")
+print(String(Int(num1)) + " / " + String(Int(num2)) + " + " + String(Int(num3)) + " % " + String(Int(num4)) + " = " + String(answer))
 
 
 //-------------------------------------------------------------------------------------------------
@@ -121,10 +121,10 @@ print("")
 // get the value of pi and set it to the constant defined below
 // Check out http://stackoverflow.com/questions/26324050/how-to-get-mathemical-pi-constant-in-swift
 
-let pi: Double 
+let pi: Double = Double.pi
 
 // concatenate so that it prints the string "The value of pi is approximately 3.141592653589793"
-print("")
+print("The value of pi is approximately " + String(pi))
 
 
 //-------------------------------------------------------------------------------------------------
@@ -136,6 +136,8 @@ print("")
 // Step 4: Round to the nearest whole number and display on the console
 // Step 5: If you divided your result by 5, what would the remainder be? Then print "My power level is over \(Your_Variable_Here)"
 
-
+var kys : Double = 56
+answer = kys + 100
+print()
 
 

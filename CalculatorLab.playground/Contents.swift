@@ -129,7 +129,7 @@ print("The value of pi is approximately " + String(pi))
 
 //-------------------------------------------------------------------------------------------------
 // 8 
-// Pick a number and saved into a variable make it a decimal value.
+// Pick a number and saved into a variable make it a decimal value.              
 // Step 1: Add 100 to the number then print a string that says "After adding 100 your number is..."
 // Step 2: Triple your number and print your result
 // Step 3: Now cut the number in half and print to the console
@@ -137,7 +137,11 @@ print("The value of pi is approximately " + String(pi))
 // Step 5: If you divided your result by 5, what would the remainder be? Then print "My power level is over \(Your_Variable_Here)"
 
 var kys : Double = 56
-answer = kys + 100
-print()
-
-
+answer = (kys) + 100
+print ("After addding 100 your number is " + String(Int(answer)))
+answer = answer * 3
+print (Int(answer))
+answer = answer / 2
+print (Int(answer))
+answer = Double(Int(answer) % 5)
+print ("My power level is over " + String(Int(answer)))
